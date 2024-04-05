@@ -1,0 +1,86 @@
+{
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.editor.enablePreview": true,
+	// Explorer
+	"explorer.openEditors.visible": 1,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.compactFolders": false,
+	"explorer.decorations.colors": false,
+	// Files
+	"files.trimFinalNewlines": true,
+	"files.exclude": {
+		"*.gitattributes": true,
+		"*.gitignore": true,
+		"**/.DS_Store": true,
+		"**/.git": true,
+		"**/.vs": true,
+		"**/.vscode": true,
+		"**/.idea": true,
+		"*/bin": true,
+		"*/obj": true,
+		"*.meta": true
+	},
+	"files.associations": {
+		"*.prefab": "yaml",
+		"*.asset": "yaml",
+		"*.unity": "yaml",
+		"*.meta": "yaml",
+		"*.uss": "css",
+		"*.uxml": "xml",
+		"*.asmdef": "json"
+	},
+	"window.zoomLevel": 0,
+	// Breadcrumbs
+	"breadcrumbs.enabled": true,
+	"breadcrumbs.symbolPath": "off",
+	// Editor
+	"editor.codeLens": true,
+	"editor.roundedSelection": false,
+	"editor.colorDecorators": true,
+	"editor.cursorBlinking": "smooth",
+	"editor.renderWhitespace": "none",
+	"editor.renderControlCharacters": false,
+	"editor.tabCompletion": "on",
+	"editor.wordWrap": "on",
+	// Editor fonts
+	"editor.fontFamily": "'Cascadia Code', 'Roboto Mono', 'Consolas'",
+	"editor.fontSize": 13,
+	"editor.fontWeight": 400,
+	"editor.formatOnSave": false,
+	"editor.fontLigatures": true,
+	// Tabulation settings
+	"editor.tabSize": 4,
+	"editor.useTabStops": true,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": true,
+	// Auto formating
+	"editor.formatOnType": true,
+	"editor.formatOnPaste": true,
+	// Terminal
+	"terminal.integrated.fontFamily": "'Cascadia Code', 'CaskaydiaCove Nerd Font', 'Roboto Mono', 'Consolas'",
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.fontWeight": 400,
+	"terminal.integrated.cursorStyle": "underline",
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.sendKeybindingsToShell": true,
+	"telemetry.telemetryLevel": "off",
+	// JSON
+	"json.format.enable": true,
+	// HTML
+	"html.autoClosingTags": true,
+	"html.format.enable": true,
+	"html.format.wrapLineLength": 160,
+	// Python
+	"python.experiments.enabled": false,
+	// Misc
+	"diffEditor.wordWrap": "off",
+	"editor.unicodeHighlight.nonBasicASCII": false,
+	"window.menuBarVisibility": "classic",
+	"window.titleBarStyle": "custom",
+	"editor.minimap.enabled": false,
+	"git.autofetch": true,
+	"workbench.colorTheme": "Dark",
+	"security.workspace.trust.banner": "never",
+	"remoteHub.commitDirectlyWarning": "off"
+}

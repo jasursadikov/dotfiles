@@ -1,0 +1,42 @@
+[user]
+	name = Jasur Sadikov
+	email = jasur@sadikoff.com
+[includeIf "gitdir:~/repos/work"]
+	path = ~/.gitconfig-work
+[credential]
+	helper = store
+[diff]
+	tool = rider
+[difftool]
+	prompt = false
+[difftool "rider"]
+    cmd = "rider" diff \"$LOCAL\" \"$REMOTE\"
+[merge]
+    tool = rider
+[mergetool]
+    prompt = false
+[mergetool "rider"]
+	cmd = "rider" merge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+    trustExitCode = true
+[alias]
+	a = add .
+	am = commit --amend -m
+	b = checkout -b
+	c = commit -m
+	clr = "!git fetch --prune && git branch | grep 'feature/\\|bugfix/' | xargs -n 1 git branch -D"
+	d = pull
+	f = fetch
+	p = push
+	P = push -f
+	st = status
+	to = checkout
+	u = push -u origin HEAD
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	editor = code --wait
+[init]
+	defaultBranch = master
