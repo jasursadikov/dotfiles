@@ -31,7 +31,7 @@ alias logout='gnome-session-quit --logout --no-prompt'
 alias xorw='echo "$WAYLAND_DISPLAY $XDG_SESSION_TYPE"'
 
 # Git
-alias mud='~/repos/jasursadikov/mud/mud.py'
+alias mud='~/repos/personal/mud/mud.py'
 alias mudu='mud fetch > /dev/null;mud -d git pull > /dev/null;mud status'
 alias wip='git add .;git commit -m "WIP";git push'
 
@@ -62,11 +62,14 @@ typeset -g POWERLEVEL9K_PROMPT_ELEMENT_BACKGROUND=$BACKGROUND_COLOR
 typeset -g POWERLEVEL9K_EMOJICLOCK_BACKGROUND=$BACKGROUND_COLOR
 
 # Directories
-typeset -g POWERLEVEL9K_HOME_ICON='🛖'
+HOME_ICONS=('🛖' '🎪' '⛺' '🏠' '🏕️' '🏚️' '🏛️')
+HOME_ICON_INDEX=$(($RANDOM % ${#HOME_ICONS[@]} + 1))
+HOME_ICON="${HOME_ICONS[HOME_ICON_INDEX]}"
+typeset -g POWERLEVEL9K_HOME_ICON=$HOME_ICON
 typeset -g POWERLEVEL9K_HOME_SUB_ICON='📁'
 typeset -g POWERLEVEL9K_LOCK_ICON='🔒'
 typeset -g POWERLEVEL9K_FOLDER_ICON='📂'
-typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_VISUAL_IDENTIFIER_EXPANSION="⌛"
+typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_VISUAL_IDENTIFIER_EXPANSION='⌛'
 typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND=$BACKGROUND_COLOR
 
 typeset -g POWERLEVEL9K_STATUS_OK=true
