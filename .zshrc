@@ -11,7 +11,7 @@ export FZF_BASE=/usr/share/fzf
 export FZF_DEFAULT_COMMAND='fd'
 export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(archlinux sudo git python history emoji command-not-found zoxide zsh-syntax-highlighting zsh-autosuggestions gh vscode github emoji-clock fzf)
+plugins=(archlinux sudo git git-lfs tig dotnet github gh python history emoji command-not-found zoxide zsh-syntax-highlighting zsh-autosuggestions azure vscode emoji-clock fzf)
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
@@ -59,7 +59,7 @@ typeset -g POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR_FOREGROUND=4
 typeset -g POWERLEVEL9K_DIR_BACKGROUND=$BACKGROUND_COLOR
 typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=$BACKGROUND_COLOR
 typeset -g POWERLEVEL9K_PROMPT_ELEMENT_BACKGROUND=$BACKGROUND_COLOR
-typeset -g POWERLEVEL9K_EMOJICLOCK_BACKGROUND=$BACKGROUND_COLOR
+typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND=$BACKGROUND_COLOR
 
 # Directories
 HOME_ICONS=('🛖' '🎪' '⛺' '🏠' '🏕️' '🏚️' '🏛️')
@@ -70,7 +70,6 @@ typeset -g POWERLEVEL9K_HOME_SUB_ICON='📁'
 typeset -g POWERLEVEL9K_LOCK_ICON='🔒'
 typeset -g POWERLEVEL9K_FOLDER_ICON='📂'
 typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_VISUAL_IDENTIFIER_EXPANSION='⌛'
-typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND=$BACKGROUND_COLOR
 
 typeset -g POWERLEVEL9K_STATUS_OK=true
 typeset -g POWERLEVEL9K_STATUS_OK_VISUAL_IDENTIFIER_EXPANSION='✅'
