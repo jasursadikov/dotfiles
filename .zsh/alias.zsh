@@ -16,4 +16,4 @@ alias wip='git add .;git commit -m "WIP";git push'
 
 alias home-enable='cd ~;mv .git~ .git; cd --'
 alias home-disable='cd ~;mv .git .git~; cd --'
-alias home-update='home-update.sh'
+alias home-update='home-update;home-enable'
