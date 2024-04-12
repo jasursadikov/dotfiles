@@ -1,7 +1,7 @@
 [user]
 	name = Jasur Sadikov
 	email = jasur@sadikoff.com
-[includeIf "gitdir:~/repos/work"]
+[includeIf "gitdir:~/repos/work/"]
 	path = ~/.gitconfig-work
 [credential]
 	helper = store
@@ -31,6 +31,7 @@
 	st = status
 	to = checkout
 	u = push -u origin HEAD
+	undo = "git reset --hard HEAD; git clean -f"
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
