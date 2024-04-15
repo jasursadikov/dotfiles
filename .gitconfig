@@ -19,19 +19,19 @@
 	cmd = "rider" merge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
     trustExitCode = true
 [alias]
-	a = add .
-	am = commit --amend -m
-	b = checkout -b
-	c = commit -m
+	a = "add ."
+	am = "commit --amend -m"
+	b = "checkout -b"
+	c = "commit -m"
 	clr = "!git fetch --prune && git branch | grep 'feature/\\|bugfix/' | xargs -n 1 git branch -D"
-	d = pull
-	f = fetch
-	p = push
-	P = push -f
-	st = status
-	to = checkout
-	u = push -u origin HEAD
-	undo = "git reset --hard HEAD; git clean -f"
+	d = "pull"
+	f = "fetch"
+	flush = "git reset --hard HEAD; git clean -f"
+	p = "push"
+	P = "push -f"
+	st = "status"
+	to = "checkout"
+	u = "push -u origin HEAD"
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

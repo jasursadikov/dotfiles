@@ -20,4 +20,5 @@ export EDITOR=code
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [[ -s ~/.zsh/alias.zsh ]] && source ~/.zsh/alias.zsh
+[[ -s ~/.zsh/alias.zsh ]] && source ~/.zsh/auth.zsh
 [[ -s ~/.zsh/p10k.zsh ]] && source ~/.zsh/p10k.zsh
