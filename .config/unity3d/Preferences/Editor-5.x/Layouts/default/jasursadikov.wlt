@@ -254,7 +254,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: Jasur Sadikov
+  m_LastLoadedLayoutName: jasursadikov
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
