@@ -7,6 +7,8 @@ PATH="$HOME/.local/bin:$PATH"
 export npm_config_prefix="$HOME/.local"
 PATH="$HOME/bin:$PATH"
 
+ZLE_RPROMPT_INDENT=0
+
 export FZF_BASE=/usr/share/fzf
 export FZF_DEFAULT_COMMAND='fd'
 export ZSH="$HOME/.oh-my-zsh"
