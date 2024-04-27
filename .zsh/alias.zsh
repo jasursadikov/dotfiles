@@ -5,7 +5,7 @@
 alias ls='exa'
 alias cat='bat'
 alias grep='rg'
-alias calc='bpython'
+alias calc='gnome-calculator &'
 alias logout='gnome-session-quit --logout --no-prompt'
 alias xorw='echo "$WAYLAND_DISPLAY $XDG_SESSION_TYPE"'
 

@@ -5,7 +5,7 @@
 FOREGROUND_COLOR=7
 BACKGROUND_COLOR=16
 
-HOME_ICON="🚽"
+HOME_ICON="🛖"
 
 # function prompt_emojiclock() { p10k segment -t "$(emoji-clock)"; }
 
