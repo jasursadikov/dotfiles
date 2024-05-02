@@ -1,17 +1,18 @@
 [mud]
-	run_async = 1
-	run_table = 1
-	auto_fetch = 0
-	nerd_fonts = 1
-	simplify_branches = 1
-	config_path = /home/jsd/repos/work/.mudconfig
+run_async = True
+run_table = True
+auto_fetch = False
+nerd_fonts = True
+simplify_branches = True
+config_path = /home/jsd/repos/work/.mudconfig
 
 [alias]
-	discard = git discard
-	fetch = git fetch
-	to = git checkout
-	pull = git pull
-	push = git push
-	d = git pull
-	p = git push
-	f = git fetch
+discard = git discard
+fetch = git fetch
+to = git checkout
+pull = git pull
+push = git push
+d = git pull
+p = git push
+f = git fetch
+
