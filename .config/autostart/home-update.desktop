@@ -3,4 +3,4 @@ Name=Home Backup
 Comment=Does a backup each startup.
 Type=Application
 Terminal=false
-Exec=/home/jsd/.local/bin/home-update.sh
+Exec=~/.local/bin/home-update
