@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+  echo "Usage: $0 path_to_project"
+  exit 1
+fi
+
+PROJECT_PATH="$1"
+
+GTK_THEME=Adwaita-dark ~/Documents/unity/build/LinuxEditor/2022.3.21f1/Editor/Unity -projectPath "$PROJECT_PATH" -logfile -
