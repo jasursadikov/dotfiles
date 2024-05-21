@@ -2,9 +2,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-PATH="$HOME/.local/bin:$PATH"
-PATH="$HOME/bin:$PATH"
-
 ZLE_RPROMPT_INDENT=0
 
 export npm_config_prefix="$HOME/.local"
