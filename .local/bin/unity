@@ -7,4 +7,4 @@ fi
 
 PROJECT_PATH="$1"
 
-GTK_THEME=Adwaita-dark ~/Documents/unity/build/LinuxEditor/2022.3.21f1/Editor/Unity -projectPath "$PROJECT_PATH" -logfile -
+GTK_THEME=Adwaita-dark ~/Documents/Unity/build/LinuxEditor/2022.3.21f1/Editor/Unity -projectPath "$PROJECT_PATH" -logfile - >/dev/null 2>&1 &
