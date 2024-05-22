@@ -1,10 +1,26 @@
 #!/bin/bash
 
-if [ -z "$1" ]; then
-  echo "Usage: $0 path_to_project"
+show_usage() {
+  echo "Usage: $0 [-l|--log] project_path"
   exit 1
+}
+
+LOG_OUTPUT=false
+
+while [[ "$#" -gt 0 ]]; do
+  case $1 in
+    -l|--log) LOG_OUTPUT=true; shift ;;
+    -h|--help) show_usage ;;
+    *) PROJECT_PATH="$1"; shift ;;
+  esac
+done
+
+if [ -z "$PROJECT_PATH" ]; then
+  show_usage
 fi
 
-PROJECT_PATH="$1"
-
-GTK_THEME=Adwaita-dark ~/Documents/Unity/build/LinuxEditor/2022.3.21f1/Editor/Unity -projectPath "$PROJECT_PATH" -logfile - >/dev/null 2>&1 &
+if $LOG_OUTPUT; then
+  GTK_THEME=Adwaita-dark ~/Documents/Unity/build/LinuxEditor/2022.3.21f1/Editor/Unity -projectPath "$PROJECT_PATH" -logfile -
+else
+  GTK_THEME=Adwaita-dark ~/Documents/Unity/build/LinuxEditor/2022.3.21f1/Editor/Unity -projectPath "$PROJECT_PATH" &
+fi
