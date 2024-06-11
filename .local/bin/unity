@@ -20,7 +20,7 @@ if [ -z "$PROJECT_PATH" ]; then
 fi
 
 if $LOG_OUTPUT; then
-  GTK_THEME=Adwaita-dark ~/Documents/Unity/build/LinuxEditor/2022.3.29f1/Unity -projectPath "$PROJECT_PATH" -logfile -
+  GTK_THEME=Adwaita-dark $UNITY -projectPath "$PROJECT_PATH" -logfile -
 else
-  GTK_THEME=Adwaita-dark ~/Documents/Unity/build/LinuxEditor/2022.3.29f1/Unity -projectPath "$PROJECT_PATH" &
+  GTK_THEME=Adwaita-dark $UNITY -projectPath "$PROJECT_PATH" &
 fi
