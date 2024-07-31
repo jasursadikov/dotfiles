@@ -80,7 +80,7 @@
 	"window.titleBarStyle": "custom",
 	"editor.minimap.enabled": false,
 	"git.autofetch": true,
-	"workbench.colorTheme": "Dark",
 	"security.workspace.trust.banner": "never",
-	"remoteHub.commitDirectlyWarning": "off"
+	"remoteHub.commitDirectlyWarning": "off",
+	"workbench.colorTheme": "Jetbrains Fleet"
 }

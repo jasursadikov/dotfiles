@@ -7,8 +7,6 @@ BACKGROUND_COLOR=16
 
 HOME_ICON="🛖"
 
-# function prompt_emojiclock() { p10k segment -t "$(emoji-clock)"; }
-
 export POWERLEVEL9K_BACKGROUND=$BACKGROUND_COLOR
 
 typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(${POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS[@]}) # 'emojiclock')
