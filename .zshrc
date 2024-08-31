@@ -19,3 +19,8 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 [[ -s ~/.zsh/alias.zsh ]] && source ~/.zsh/alias.zsh
 [[ -s ~/.zsh/alias.zsh ]] && source ~/.zsh/auth.zsh
 [[ -s ~/.zsh/p10k.zsh ]] && source ~/.zsh/p10k.zsh
+
+# tmux
+# if command -v tmux >/dev/null 2>&1; then
+#     [ -z "$TMUX" ] && exec tmux
+# fi

@@ -1,7 +1,7 @@
 [user]
 	name = Jasur Sadikov
 	email = jasur@sadikoff.com
-[includeIf "gitdir:~/repos/work/"]
+[includeIf "gitdir:~/Documents/work/"]
 	path = ~/.gitconfig-work
 [credential]
 	helper = store
