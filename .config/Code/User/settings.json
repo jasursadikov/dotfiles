@@ -82,6 +82,5 @@
 	"git.autofetch": true,
 	"security.workspace.trust.banner": "never",
 	"remoteHub.commitDirectlyWarning": "off",
-	"workbench.colorTheme": "Default Light Modern",
 	"security.workspace.trust.untrustedFiles": "open"
 }

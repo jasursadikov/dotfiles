@@ -12,7 +12,7 @@ alias xorw='echo "$WAYLAND_DISPLAY $XDG_SESSION_TYPE"'
 alias logout='gnome-session-quit --logout --no-prompt'
 
 # Git
-alias mud='~/Documents/personal/mud/mud.py'
+alias mud='~/Documents/personal/mud/mud.sh'
 alias wip='git add .;git commit -m "WIP";git push'
 
 alias home-enable='cd ~;mv .git~ .git; cd --'

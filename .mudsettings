@@ -1,8 +1,8 @@
 [mud]
 run_async = True
 run_table = True
-auto_fetch = False
 nerd_fonts = True
+ask_updates = True
 simplify_branches = True
 config_path = /home/jsd/Documents/work/.mudconfig
 
