@@ -4,6 +4,8 @@ fi
 
 ZLE_RPROMPT_INDENT=0
 
+setopt globdots
+
 export FZF_BASE=/usr/share/fzf
 export FZF_DEFAULT_COMMAND='fd'
 export ZSH="$HOME/.oh-my-zsh"

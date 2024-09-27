@@ -3,7 +3,8 @@ run_async = True
 run_table = True
 nerd_fonts = True
 ask_updates = True
-simplify_branches = True
+show_borders = True
+collapse_paths = False
 config_path = /home/jsd/Documents/work/.mudconfig
 
 [alias]

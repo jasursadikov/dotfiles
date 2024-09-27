@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Home Backup
-Comment=Does a backup each startup.
-Type=Application
-Terminal=false
-Exec=~/.local/bin/home-update
