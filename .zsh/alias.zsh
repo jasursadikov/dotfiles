@@ -2,7 +2,7 @@
 # |            Aliases             |
 # ----------------------------------
 
-alias ls='exa'
+alias ls='exa --group-directories-first --icons=auto --color=auto --no-quotes'
 alias ff='fastfetch'
 alias cat='bat'
 alias grep='rg'
