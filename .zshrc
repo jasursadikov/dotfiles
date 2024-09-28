@@ -9,8 +9,6 @@ setopt globdots
 export FZF_BASE=/usr/share/fzf
 export FZF_DEFAULT_COMMAND='fd'
 export ZSH="$HOME/.oh-my-zsh"
-export EDITOR=code
-export UNITY="$HOME/Documents/Unity/build/LinuxEditor/2022.3.29f1/Editor/Unity"
 
 plugins=(archlinux sudo git git-lfs tig dotnet github gh python history emoji command-not-found zoxide zsh-syntax-highlighting zsh-autosuggestions azure vscode emoji-clock fzf)
 
@@ -20,8 +18,3 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [[ -s ~/.zsh/alias.zsh ]] && source ~/.zsh/alias.zsh
 [[ -s ~/.zsh/p10k.zsh ]] && source ~/.zsh/p10k.zsh
-
-# tmux
-# if command -v tmux >/dev/null 2>&1; then
-#     [ -z "$TMUX" ] && exec tmux
-# fi
