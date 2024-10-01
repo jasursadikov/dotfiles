@@ -33,18 +33,14 @@ home-update() {
 		mv .git~ .git
 	fi
 
-	(( minutes = $(date '+%M') + 15 ))
-	(( hour = $(date '+%I') + minutes / 60 ))
-	(( minutes %= 60 )); (( hour %= 12 ))
-
-	clock = emoji-clock()
+	clock=$(emoji-clock)
 	
 	if ! git status | grep -q "nothing to commit"; then
-		notify-send "Configurations updated" "Backing up your home directory"
+		notify-send "Home directory updated" "Backing up your home directory"
 		git add .
 		git commit -m "$clock $(date +'%H:%M 📆 %Y-%m-%d')"
-		# git push
-	fi;
+		git push
+	fi
 	
 	mv .git .git~
 	cd --
