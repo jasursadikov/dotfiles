@@ -1,3 +1,0 @@
-set icons
-set previewer bat
-set previewer_flags --style="grid" --paging=never --color=always
