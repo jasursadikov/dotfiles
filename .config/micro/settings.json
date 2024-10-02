@@ -1,5 +1,5 @@
 {
-	tabsize: 4,
-	statusline: true,
-	ruler: true
+	"tabsize": 4,
+	"statusline": true,
+	"ruler": true
 }
