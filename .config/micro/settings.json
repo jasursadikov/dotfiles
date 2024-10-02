@@ -1,6 +1,5 @@
 {
 	tabsize: 4,
 	statusline: true,
-	ruler: true,
-	clipboard: true
+	ruler: true
 }
