@@ -1,6 +1,6 @@
 alias ..='cd ..'
 
-alias ls='exa --group-directories-first --icons=auto --color=auto --no-quotes --classify=auto'
+alias ls='exa --group-directories-first --icons=auto --color=auto --no-quotes --classify=auto -a'
 alias tree='exa --group-directories-first --icons=auto --color=auto --no-quotes --classify=auto --tree'
 
 alias cat='bat'
