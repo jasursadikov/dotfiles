@@ -1,7 +1,4 @@
-
-logout() {
-	gnome-session-quit --logout --no-prompt	
-}
+# Home directory management
 
 home-enable() {
 	cd ~
@@ -33,6 +30,16 @@ home-update() {
 	mv .git .git~
 	cd -
 }
+
+
+# Tools
+
+logout() {
+	gnome-session-quit --logout --no-prompt	
+}
+
+
+# Utilities
 
 wip() {
 	git add .
