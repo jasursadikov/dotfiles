@@ -7,9 +7,5 @@
 
 PATH="$HOME/.local/bin:$PATH"
 
-# export npm_config_prefix="$HOME/.local"
-# export LC_ALL=en_US.UTF-8
-# export LANG=en_US.UTF-8
-
 export BROWSER=chromium
 export EDITOR=micro
