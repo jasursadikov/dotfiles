@@ -14,6 +14,7 @@ alias cls=clear
 alias ff=fastfetch
 
 alias calc='gnome-calculator &'
+alias open='xdg-open'
 
 alias xorw='echo "$WAYLAND_DISPLAY $XDG_SESSION_TYPE"'
 alias mud='~/Documents/personal/mud/mud.sh'
