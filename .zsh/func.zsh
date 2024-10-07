@@ -18,12 +18,10 @@ home-update() {
 		mv .git~ .git
 	fi
 
-	clock=$(emoji-clock)
-	
 	if ! git status | grep -q "nothing to commit"; then
 		notify-send "Home directory updated" "Backing up your home directory"
 		git add .
-		git commit -m "$clock $(date +'%H:%M 📆 %Y-%m-%d')"
+		git commit -m "$(emoji-clock) $(date +'%H:%M 📆 %Y-%m-%d')"
 		git push
 	fi
 	
@@ -43,7 +41,7 @@ logout() {
 
 wip() {
 	git add .
-	git commit -m "wip $emoji-clock $(date +'%H:%M 📆 %Y-%m-%d')$"
+	git commit -m "wip $(emoji-clock) $(date +'%H:%M 📆 %Y-%m-%d')"
 	git push
 }
 
