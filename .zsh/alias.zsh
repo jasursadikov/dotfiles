@@ -1,6 +1,7 @@
 alias ..='cd ..'
+alias ~='cd ~'
 
-# alias cd='z'
+alias cd='z'
 alias ls='exa --group-directories-first --icons=auto --color=auto --no-quotes --classify=auto -a'
 alias tree='exa --group-directories-first --icons=auto --color=auto --no-quotes --classify=auto --tree'
 

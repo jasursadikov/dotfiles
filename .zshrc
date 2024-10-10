@@ -1,23 +1,40 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-ZLE_RPROMPT_INDENT=0
-
+# Allows to see the hidden files
 setopt globdots
 
-export FZF_BASE=/usr/share/fzf
-export FZF_DEFAULT_COMMAND='fd'
-export ZSH="$HOME/.oh-my-zsh"
+export HISTORY_IGNORE="(ls *|cd *|git *)"
 
-plugins=(archlinux sudo fzf git git-lfs tig dotnet github gh python history emoji command-not-found zoxide zsh-syntax-highlighting zsh-autosuggestions vscode emoji-clock)
+source ~/.zplug/init.zsh
 
-source $ZSH/oh-my-zsh.sh
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+zplug "plugins/archlinux",			from:oh-my-zsh
+zplug "plugins/colored-man-pages",	from:oh-my-zsh
+zplug "plugins/command-not-found",	from:oh-my-zsh
+zplug "plugins/fzf",				from:oh-my-zsh
+zplug "plugins/git",				from:oh-my-zsh
+zplug "plugins/git-lfs",			from:oh-my-zsh
+zplug "plugins/github",				from:oh-my-zsh
+zplug "plugins/gh",					from:oh-my-zsh
+zplug "plugins/history",			from:oh-my-zsh
+zplug "plugins/emoji",				from:oh-my-zsh
+zplug "plugins/emoji-clock",		from:oh-my-zsh
+zplug "plugins/python",				from:oh-my-zsh
+zplug "plugins/sudo",				from:oh-my-zsh
+zplug "plugins/tig",				from:oh-my-zsh
+zplug "plugins/urltools",			from:oh-my-zsh
+zplug "plugins/vscode",				from:oh-my-zsh
+zplug "plugins/zoxide",				from:oh-my-zsh
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+zplug "romkatv/powerlevel10k",					as:theme, depth:1 
+zplug "zsh-users/zsh-syntax-highlighting", 		defer:2
+
+zplug load
+
+autoload -Uz compinit && compinit
+zstyle ':completion:*' menu select
+bindkey '^I' complete-word
 
 # Referencing files from ~/.zsh
-[[ -s ~/.zsh/alias.zsh ]] && source ~/.zsh/alias.zsh
-[[ -s ~/.zsh/func.zsh ]] && source ~/.zsh/func.zsh
-[[ -s ~/.zsh/p10k.zsh ]] && source ~/.zsh/p10k.zsh
+source ~/.p10k.zsh
+source ~/.zsh/alias.zsh
+source ~/.zsh/func.zsh
+source ~/.zsh/history.zsh
+source ~/.zsh/p10k.zsh
