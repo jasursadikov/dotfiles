@@ -35,5 +35,4 @@ fi
 # Referencing files from ~/.zsh
 source ~/.zsh/alias.zsh
 source ~/.zsh/func.zsh
-source ~/.zsh/history.zsh
 source ~/.zsh/menu.zsh
