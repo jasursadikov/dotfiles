@@ -9,10 +9,10 @@ zplug "plugins/archlinux",			from:oh-my-zsh
 zplug "plugins/colored-man-pages",	from:oh-my-zsh
 zplug "plugins/command-not-found",	from:oh-my-zsh
 zplug "plugins/copyfile",			from:oh-my-zsh
+zplug "plugins/emoji-clock",		from:oh-my-zsh
 zplug "plugins/github",				from:oh-my-zsh
 zplug "plugins/gh",					from:oh-my-zsh
 zplug "plugins/history",			from:oh-my-zsh
-zplug "plugins/emoji-clock",		from:oh-my-zsh
 zplug "plugins/sudo",				from:oh-my-zsh
 
 zplug "junegunn/fzf"
