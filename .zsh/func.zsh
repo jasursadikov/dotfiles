@@ -2,13 +2,13 @@
 home-enable() {
 	cd ~
 	mv .git~ .git 
-	cd -
+	cd - > /dev/null
 }
 
 home-disable() {
 	cd ~
 	mv .git .git~
-	cd -
+	cd - > /dev/null
 }
 
 home-update() {
@@ -25,7 +25,7 @@ home-update() {
 	fi
 	
 	mv .git .git~
-	cd -
+	cd - > /dev/null
 }
 
 

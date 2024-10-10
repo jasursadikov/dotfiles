@@ -1,6 +1,3 @@
-alias ..='cd ..'
-alias ~='cd ~'
-
 alias cd='z'
 alias ls='exa -a --group-directories-first --icons=always --color=auto --no-quotes --classify=auto'
 alias lf='exa -f -a --icons=always --color=auto --no-quotes --classify=auto'
@@ -8,6 +5,9 @@ alias tree='exa --group-directories-first --icons=auto --color=auto --no-quotes 
 alias cat=bat
 alias py=python
 alias grep=rg
+
+alias ..='cd ..'
+alias ~='cd ~'
 
 alias cls=clear
 alias ff=fastfetch
