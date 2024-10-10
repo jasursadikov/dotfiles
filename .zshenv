@@ -2,24 +2,23 @@ export BROWSER=chromium
 export EDITOR=micro
 
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/bin:$PATH"
 
 export FZF_BASE=/usr/share/fzf
 export FZF_DEFAULT_COMMAND='fd'
 
 export ZSH_COMPDUMP="${HOME}/.cache/zsh/.zcompdump"
 
-# History files
-export HISTFILE="$HOME/.cache/zsh/history"
+# Python
 export PYTHONHISTORY="$HOME/.cache/python/history"
 
 # History configurations
+export HISTFILE="$HOME/.cache/zsh/history"
 export HISTORY_IGNORE="(ls *|cd *|git *)"
-export HISTSIZE=10000        # Number of commands to remember in the current session
-export SAVEHIST=10000        # Number of commands to save in the history file
+export HISTSIZE=10000
+export SAVEHIST=10000
 
-setopt APPEND_HISTORY        # Append commands to the history file, don't overwrite it
-setopt INC_APPEND_HISTORY    # Add commands to the history file immediately, not when the shell exits
-setopt SHARE_HISTORY         # Share history between all sessions
-setopt HIST_IGNORE_ALL_DUPS  # Ignore duplicate commands
-setopt HIST_REDUCE_BLANKS    # Remove superfluous blanks before recording entry
+setopt APPEND_HISTORY
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_REDUCE_BLANKS

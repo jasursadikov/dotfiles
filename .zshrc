@@ -1,6 +1,7 @@
 # Allows to see the hidden files
 setopt globdots
 
+# Sourcing zplug
 source ~/.zplug/init.zsh
 
 # Referencing plugins
@@ -28,6 +29,7 @@ zplug load
 if [ -f "~/.zsh/p10k-default.zsh" ]; then
 	echo ".p10k-default.zsh file not found. Create default file by running 'p10k configure' and then move it to ~/.zsh/p10k-default.zshrc."
 else
+	ZLE_RPROMPT_INDENT=0
 	source ~/.zsh/p10k-default.zsh
 	source ~/.zsh/p10k.zsh
 fi
