@@ -30,11 +30,4 @@ source ~/.zsh/alias.zsh
 source ~/.zsh/func.zsh
 source ~/.zsh/history.zsh
 source ~/.zsh/p10k.zsh
-
-autoload -Uz compinit && compinit
-autoload -Uz colors && colors
-
-zstyle ':completion:*' menu select
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-
-bindkey '^I' complete-word
+source ~/.zsh/menu.zsh
