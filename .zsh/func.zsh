@@ -1,5 +1,4 @@
 # Home directory management
-
 home-enable() {
 	cd ~
 	mv .git~ .git 
@@ -31,27 +30,16 @@ home-update() {
 
 
 # Tools
-
 logout() {
 	gnome-session-quit --logout --no-prompt	
 }
 
 
 # Utilities
-
 wip() {
 	git add .
 	git commit -m "wip $(emoji-clock) $(date +'%H:%M 📆 %Y-%m-%d')"
 	git push
-}
-
-copyclip() {
-    if [ -f "$1" ]; then
-		xsel --clipboard < figma.txt
-        echo "Content of \e[32m$1\e[0m is copied to the clipboard 📋"
-    else
-        echo "\e[31mFile not found:\e[0m $1"
-    fi
 }
 
 newpass() {
