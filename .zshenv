@@ -9,5 +9,7 @@ export FZF_DEFAULT_COMMAND='fd'
 
 export ZSH_COMPDUMP="${HOME}/.cache/zsh/.zcompdump"
 
+# History files
+export HISTORY_IGNORE="(ls *|cd *|git *)"
 export HISTFILE="$HOME/.cache/zsh/history"
 export PYTHONHISTORY="$HOME/.cache/python/history"
