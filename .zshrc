@@ -9,7 +9,6 @@ zplug "plugins/archlinux",			from:oh-my-zsh
 zplug "plugins/colored-man-pages",	from:oh-my-zsh
 zplug "plugins/command-not-found",	from:oh-my-zsh
 zplug "plugins/copyfile",			from:oh-my-zsh
-zplug "plugins/fzf",				from:oh-my-zsh
 zplug "plugins/github",				from:oh-my-zsh
 zplug "plugins/gh",					from:oh-my-zsh
 zplug "plugins/history",			from:oh-my-zsh
@@ -17,8 +16,8 @@ zplug "plugins/emoji-clock",		from:oh-my-zsh
 zplug "plugins/sudo",				from:oh-my-zsh
 
 zplug "junegunn/fzf"
-zplug "romkatv/powerlevel10k",				as:theme, depth:1 
 zplug "ajeetdsouza/zoxide"
+zplug "romkatv/powerlevel10k",				as:theme, depth:1 
 zplug "z-shell/zsh-tig-plugin"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-autosuggestions"
@@ -40,4 +39,4 @@ fi
 source ~/.zsh/alias.zsh
 source ~/.zsh/func.zsh
 source ~/.zsh/menu.zsh
-
+source ~/.zsh/keyboard.zsh
