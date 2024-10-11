@@ -30,3 +30,5 @@ key[CtrlLeft]='^[[1;5D'
 bindkey "${key[CtrlRight]}" forward-word
 bindkey "${key[CtrlLeft]}" backward-word
 bindkey "${key[Delete]}" delete-char
+bindkey "${key[PageUp]}" up-line-or-history
+bindkey "${key[PageDown]}" down-line-or-history
