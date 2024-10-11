@@ -1,24 +1,23 @@
-# Home directory management
-home-enable() {
+# Dot files repo management
+dotfiles-enable() {
 	cd ~
 	mv .git~ .git 
 	cd - > /dev/null
 }
 
-home-disable() {
+dotfiles-disable() {
 	cd ~
 	mv .git .git~
 	cd - > /dev/null
 }
 
-home-update() {
+dotfiles-update() {
 	cd ~
 	if [ -d ".git~" ]; then
 		mv .git~ .git
 	fi
 
 	if ! git status | grep -q "nothing to commit"; then
-		notify-send "Home directory updated" "Backing up your home directory"
 		git add .
 		git commit -m "$(emoji-clock) $(date +'%H:%M 📆 %Y-%m-%d')"
 		git push
@@ -44,6 +43,6 @@ wip() {
 
 newpass() {
 	PASS_LENGTH=20
-	tr -dc 'A-Za-z0-9@#$%^&*()-_+=' </dev/urandom | head -c $PASS_LENGTH | xclip -selection clipboard	
-	echo 'New password 🔑 is created and placed in your clipboard 📋'
+	tr -dc "A-Za-z0-9@#$%^&*()-_+=" </dev/urandom | head -c $PASS_LENGTH | xclip -selection clipboard	
+	echo "New password 🔑 is created and placed in your clipboard 📋"
 }
