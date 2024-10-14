@@ -3,6 +3,7 @@ dotfiles-enable() {
 	cd ~
 	mv .git~ .git 
 	cd - > /dev/null
+	git status
 }
 
 dotfiles-disable() {

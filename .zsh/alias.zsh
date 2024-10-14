@@ -5,6 +5,7 @@ alias tree='exa --group-directories-first --icons=auto --color=auto --no-quotes 
 alias cat=bat
 alias py=python
 alias grep=rg
+alias pactree='pactree --color'
 
 alias ..='cd ..'
 alias ~='cd ~'

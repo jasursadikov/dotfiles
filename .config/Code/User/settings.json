@@ -83,7 +83,7 @@
 	"security.workspace.trust.banner": "never",
 	"remoteHub.commitDirectlyWarning": "off",
 	"security.workspace.trust.untrustedFiles": "open",
-	"workbench.colorTheme": "Default Dark Modern",
+	"workbench.colorTheme": "Default Light Modern",
 	// Auto Dark Mode extensions
 	"window.autoDetectColorScheme": true,
 	"workbench.preferredDarkColorTheme" : "Default Dark Modern",
