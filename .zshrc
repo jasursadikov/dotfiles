@@ -13,13 +13,14 @@ zplug "plugins/emoji-clock",		from:oh-my-zsh
 zplug "plugins/history",			from:oh-my-zsh
 zplug "plugins/sudo",				from:oh-my-zsh
 
-zplug "junegunn/fzf"
-zplug "ajeetdsouza/zoxide"
-zplug "romkatv/powerlevel10k",				as:theme, depth:1 
-zplug "z-shell/zsh-tig-plugin"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting"
+
+zplug "junegunn/fzf"
+zplug "ajeetdsouza/zoxide"
+zplug "romkatv/powerlevel10k",			as:theme, depth:1 
+zplug "z-shell/zsh-tig-plugin"
 
 # Loading plugins
 zplug load
