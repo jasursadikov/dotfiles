@@ -26,9 +26,13 @@ key[Right]='^[[C'
 key[Menu]='\t'
 key[CtrlRight]='^[[1;5C'
 key[CtrlLeft]='^[[1;5D'
+key[ShiftRight]='^[[1;2C'
+key[ShiftLeft]='^[[1;2D'
 
 bindkey "${key[CtrlRight]}" forward-word
 bindkey "${key[CtrlLeft]}" backward-word
 bindkey "${key[Delete]}" delete-char
 bindkey "${key[PageUp]}" up-line-or-history
 bindkey "${key[PageDown]}" down-line-or-history
+bindkey "${key[ShiftRight]}" forward-word
+bindkey "${key[ShiftLeft]}" backward-word
