@@ -19,10 +19,6 @@
     },
     {
       "type": "custom",
-      "format": " \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[38m  \u001b[39m  |   \u001b[38m  \u001b[37m  \u001b[36m  \u001b[35m  \u001b[34m  \u001b[33m  \u001b[32m  \u001b[31m  \u001b[90m "
-    },
-    {
-      "type": "custom",
       "format": "\u001b[90m┌────────────────────────────────────────────────────────────┐"
     },
     {
@@ -98,12 +94,32 @@
       "key": "│ ├\uf2c9",
       "keyColor": "cyan",
       "temp": true,
-      "format": "{4} | {2}"
+      "format": "{4} | {2}",
+      "hideType": "integrated"
+    },
+    {
+      "type": "localip",
+      "key": "\udb82\ude5f IP",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "localip",
+      "key": "│ ├\udb86\udd82",
+      "keyColor": "magenta",
+      "showIpv4": false,
+      "showIpv6": true
+    },
+    {
+      "type": "localip",
+      "key": "│ ├\uf041",
+      "keyColor": "magenta",
+      "showIpv6": false,
+      "showMac": true
     },
     {
       "type": "wm",
       "key": "\ueb7f DM",
-      "keyColor": "blue"      
+      "keyColor": "blue"
     },
     {
       "type": "lm",
@@ -119,5 +135,9 @@
       "type": "custom",
       "format": "\u001b[90m└────────────────────────────────────────────────────────────┘"
     },
+    {
+      "type": "custom",
+      "format": " \u001b[90m\uf111  \u001b[31m\uf111  \u001b[32m\uf111  \u001b[33m\uf111  \u001b[34m\uf111  \u001b[35m\uf111  \u001b[36m\uf111  \u001b[37m\uf111  \u001b[38m\uf111  \u001b[39m\uf111  | \uf111  \u001b[38m\uf111  \u001b[37m\uf111  \u001b[36m\uf111  \u001b[35m\uf111  \u001b[34m\uf111  \u001b[33m\uf111  \u001b[32m\uf111  \u001b[31m\uf111  \u001b[90m\uf111 "
+    }
   ]
 }

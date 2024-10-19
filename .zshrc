@@ -1,3 +1,6 @@
+# Sourcing .profile, since it is not being sourced by default
+[ -f ~/.profile ] && source ~/.profile
+
 # Allows to see the hidden files
 setopt globdots
 
