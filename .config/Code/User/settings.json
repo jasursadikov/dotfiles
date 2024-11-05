@@ -65,6 +65,9 @@
 	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.sendKeybindingsToShell": true,
 	"telemetry.telemetryLevel": "off",
+	// XML
+	"xmlTools.splitAttributesOnFormat": false,
+	"xmlTools.keepClosingTagOnSameLine": true,
 	// JSON
 	"json.format.enable": true,
 	// HTML
@@ -87,5 +90,9 @@
 	// Auto Dark Mode extensions
 	"window.autoDetectColorScheme": true,
 	"workbench.preferredDarkColorTheme" : "Default Dark Modern",
-	"workbench.preferredLightColorTheme" : "Default Light Modern"
+	"workbench.preferredLightColorTheme": "Default Light Modern",
+	"python.defaultInterpreterPath": "/home/jsd/Documents/personal/mud-ygrt/.venv",
+	"[xml]": {
+		"editor.defaultFormatter": "DotJoshJohnson.xml"
+	}
 }

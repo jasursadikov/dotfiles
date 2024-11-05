@@ -1,3 +1,5 @@
+bindkey -e
+
 typeset -g -A key
 
 key[F1]='^[OP'
@@ -28,11 +30,13 @@ key[CtrlRight]='^[[1;5C'
 key[CtrlLeft]='^[[1;5D'
 key[ShiftRight]='^[[1;2C'
 key[ShiftLeft]='^[[1;2D'
+key[ShiftCtrlLeft]='^[[1;6D'
+key[ShiftCtrlRight]='^[[1;6C'
 
-bindkey "${key[CtrlRight]}" forward-word
-bindkey "${key[CtrlLeft]}" backward-word
 bindkey "${key[Delete]}" delete-char
 bindkey "${key[PageUp]}" up-line-or-history
 bindkey "${key[PageDown]}" down-line-or-history
-bindkey "${key[ShiftRight]}" forward-word
-bindkey "${key[ShiftLeft]}" backward-word
+bindkey "${key[CtrlRight]}" forward-word
+bindkey "${key[CtrlLeft]}" backward-word
+bindkey "${key[ShiftCtrlLeft]}" select-word-back
+bindkey "${key[ShiftCtrlRight]}" select-word-forward

@@ -3,7 +3,7 @@ run_async = True
 run_table = True
 nerd_fonts = True
 show_borders = True
-collapse_paths = False
+collapse_paths = True
 config_path = /home/jsd/Documents/work/.mudconfig
 
 [alias]
@@ -15,3 +15,4 @@ push = git push
 d = git pull
 p = git push
 f = git fetch
+

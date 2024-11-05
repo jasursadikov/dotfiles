@@ -11,7 +11,6 @@ source ~/.zplug/init.zsh
 zplug "plugins/archlinux",			from:oh-my-zsh
 zplug "plugins/colored-man-pages",	from:oh-my-zsh
 zplug "plugins/command-not-found",	from:oh-my-zsh
-zplug "plugins/copyfile",			from:oh-my-zsh
 zplug "plugins/emoji-clock",		from:oh-my-zsh
 zplug "plugins/history",			from:oh-my-zsh
 zplug "plugins/sudo",				from:oh-my-zsh
@@ -21,8 +20,8 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting"
 
 zplug "junegunn/fzf"
-zplug "ajeetdsouza/zoxide"
-zplug "romkatv/powerlevel10k",			as:theme, depth:1 
+zplug "ajeetdsouza/zoxide"		
+zplug "romkatv/powerlevel10k",	as:theme, depth:1 
 zplug "z-shell/zsh-tig-plugin"
 
 # Loading plugins

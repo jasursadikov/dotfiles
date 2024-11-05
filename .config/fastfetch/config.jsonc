@@ -6,7 +6,7 @@
   "modules": [
     {
       "type": "custom",
-      "format": "\u001b[90m┌────────────────────────────────────────────────────────────┐"
+      "format": "\u001b[90m╭────────────────────────────────────────────────────────────╮"
     },
     {
       "type": "title",
@@ -15,125 +15,78 @@
     },
     {
       "type": "custom",
-      "format": "\u001b[90m└────────────────────────────────────────────────────────────┘"
+      "format": "\u001b[90m╰────────────────────────────────────────────────────────────╯"
     },
     {
       "type": "custom",
-      "format": "\u001b[90m┌────────────────────────────────────────────────────────────┐"
+      "format": "\u001b[90m╭────────────────────────────────────────────────────────────╮"
     },
     {
       "type": "os",
-      "key": "\ue712 OS",
-      "keyColor": "yellow"
+      "key": "\ue712",
+      "keyColor": "yellow",
+      "outputColor": "yellow"
     },
     {
       "type": "kernel",
-      "key": "│ ├\uf013",
+      "key": "│ \uf013",
       "keyColor": "yellow"
     },
     {
       "type": "packages",
-      "key": "│ ├\ueb29",
+      "key": "│ \ueb29",
       "keyColor": "yellow",
     },
     {
       "type": "shell",
-      "key": "│ └\uea85",
+      "key": "│ \uea85",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "terminal",
+      "key": "│ \ue795",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "uptime",
+      "key": "│ \udb82\udd54",
       "keyColor": "yellow"
     },
     {
       "type": "host",
-      "key": "\udb80\udf22 PC",
-      "keyColor": "green"
+      "key": "\udb80\udf22",
+      "keyColor": "green",
+      "outputColor": "green"
     },
     {
       "type": "cpu",
-      "key": "│ ├\udb80\udf5b",
+      "key": "│ \udb80\udf5b",
       "keyColor": "green"
     },
     {
       "type": "gpu",
-      "key": "│ ├\udb81\ude1a",
+      "key": "│ \udb81\ude1a",
       "keyColor": "green"
     },
     {
       "type": "disk",
-      "key": "│ ├\udb85\udedf",
+      "key": "│ \udb85\udedf",
       "keyColor": "green"
     },
     {
       "type": "memory",
-      "key": "│ ├\udb81\udc6d",
-      "keyColor": "green"
-    },
-    {
-      "type": "uptime",
-      "key": "│ ├\udb82\udd54",
+      "key": "│ \udb81\udc6d",
       "keyColor": "green"
     },
     {
       "type": "display",
-      "key": "│ └\udb80\udf79",
+      "key": "│ \udb80\udf79",
       "keyColor": "green",
       "format": "{1}x{2} [{3}Hz] ({6})"
     },
     {
-      "type": "battery",
-      "key": "\udb80\udc79 BT",
-      "keyColor": "cyan"
-    },
-    {
-      "type": "cpu",
-      "key": "│ ├\uf2c9",
-      "keyColor": "cyan",
-      "temp": true,
-      "format": "{8} | {0}"
-    },
-    {
-      "type": "gpu",
-      "key": "│ ├\uf2c9",
-      "keyColor": "cyan",
-      "temp": true,
-      "format": "{4} | {2}",
-      "hideType": "integrated"
-    },
-    {
-      "type": "localip",
-      "key": "\udb82\ude5f IP",
-      "keyColor": "magenta"
-    },
-    {
-      "type": "localip",
-      "key": "│ ├\udb86\udd82",
-      "keyColor": "magenta",
-      "showIpv4": false,
-      "showIpv6": true
-    },
-    {
-      "type": "localip",
-      "key": "│ ├\uf041",
-      "keyColor": "magenta",
-      "showIpv6": false,
-      "showMac": true
-    },
-    {
-      "type": "wm",
-      "key": "\ueb7f DM",
-      "keyColor": "blue"
-    },
-    {
-      "type": "lm",
-      "key": "│ ├\udb82\udde8",
-      "keyColor": "blue"
-    },
-    {
-      "type": "terminal",
-      "key": "│ ├\ue795",
-      "keyColor": "blue"
-    },
-    {
       "type": "custom",
-      "format": "\u001b[90m└────────────────────────────────────────────────────────────┘"
+      "format": "\u001b[90m╰────────────────────────────────────────────────────────────╯"
     },
     {
       "type": "custom",
