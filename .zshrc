@@ -19,13 +19,15 @@ zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting"
 
-zplug "junegunn/fzf"
 zplug "ajeetdsouza/zoxide"		
 zplug "romkatv/powerlevel10k",	as:theme, depth:1 
 zplug "z-shell/zsh-tig-plugin"
 
 # Loading plugins
 zplug load
+
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
 
 # Referencing p10k.zsh
 if [ -f "~/.zsh/p10k-default.zsh" ]; then
@@ -41,3 +43,16 @@ source ~/.zsh/alias.zsh
 source ~/.zsh/func.zsh
 source ~/.zsh/menu.zsh
 source ~/.zsh/keyboard.zsh
+
+
+_mud_list() {
+    local values
+    values=("${(@f)$(cat ~/Documents/work/repos/.mudconfig | awk '{print $2}' | sort | uniq | awk -F',' '{ for (i=1; i<=NF; i++) print $i }' | sort | uniq | sed 's/^/-l=/')}")
+    _describe 'mud values' values
+}
+ 
+compdef _mud_list mud
+
+if command -v tmux &> /dev/null && [[ -z "$TMUX" ]]; then
+    tmux attach || tmux new
+fi

@@ -1,10 +1,10 @@
 [mud]
 run_async = True
-run_table = True
+run_table = False
 nerd_fonts = True
 show_borders = True
 collapse_paths = True
-config_path = /home/jsd/Documents/work/.mudconfig
+config_path = /home/jsd/Documents/personal/.mudconfig
 
 [alias]
 discard = git discard
