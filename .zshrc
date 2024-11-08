@@ -44,8 +44,6 @@ source ~/.zsh/func.zsh
 source ~/.zsh/menu.zsh
 source ~/.zsh/keyboard.zsh
 
-compdef _mud_list mud
-
 if command -v tmux &> /dev/null && [[ -z "$TMUX" ]]; then
     tmux attach || tmux new
 fi
