@@ -1,6 +1,6 @@
 [mud]
 run_async = True
-run_table = False
+run_table = True
 nerd_fonts = True
 show_borders = True
 collapse_paths = True

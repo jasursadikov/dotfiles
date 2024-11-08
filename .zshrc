@@ -44,13 +44,6 @@ source ~/.zsh/func.zsh
 source ~/.zsh/menu.zsh
 source ~/.zsh/keyboard.zsh
 
-
-_mud_list() {
-    local values
-    values=("${(@f)$(cat ~/Documents/work/repos/.mudconfig | awk '{print $2}' | sort | uniq | awk -F',' '{ for (i=1; i<=NF; i++) print $i }' | sort | uniq | sed 's/^/-l=/')}")
-    _describe 'mud values' values
-}
- 
 compdef _mud_list mud
 
 if command -v tmux &> /dev/null && [[ -z "$TMUX" ]]; then
