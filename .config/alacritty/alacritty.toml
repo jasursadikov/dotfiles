@@ -20,10 +20,12 @@ style = "Block"
 [colors.primary]
 background = '#1e1e1e'
 foreground = '#ffffff'
+dim_foreground = '#c0bfbc'
+bright_foreground = '#ffffff'
 
 # Normal colors
 [colors.normal]
-black       = '#5e5c64'
+black      = '#5e5c64'
 red        = '#c01c28'
 green      = '#2ec27e'
 yellow     = '#f5c211'
