@@ -15,4 +15,3 @@ push = git push
 d = git pull
 p = git push
 f = git fetch
-

@@ -23,7 +23,7 @@ dotfiles-update() {
 		git add .
 		git commit -m "$(emoji-clock) $(date +'%H:%M 📆 %Y-%m-%d')"
 		git push
-	elif
+	else
 		echo "Nothing to update"
 	fi
 	

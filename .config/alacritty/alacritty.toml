@@ -1,0 +1,34 @@
+[window]
+title = "Console"
+decorations = "Full"
+dynamic_title = true
+opacity = 0.91 
+
+[terminal]
+shell = { program = "/bin/zsh", args = ["-l", "-c", "tmux attach-session -t jsd 2>/dev/null || tmux new-session -s jsd"] }
+
+[font]
+size = 10
+
+[font.normal]
+family = "Cascadia Code"
+style = "Regular"
+
+[cursor]
+style = "Block"
+
+# Default colors
+[colors.primary]
+background = '#1e1e1e'
+foreground = '#ffffff'
+
+# Normal colors
+[colors.normal]
+black       = '#5e5c64'
+red        = '#c01c28'
+green      = '#2ec27e'
+yellow     = '#f5c211'
+blue       = '#1e78e4'
+magenta    = '#9841bb'
+cyan       = '#0ab9dc'
+white      = '#ffffff'

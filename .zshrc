@@ -1,3 +1,8 @@
+# p10k instant prompt
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Sourcing .profile, since it is not being sourced by default
 [ -f ~/.profile ] && source ~/.profile
 
@@ -43,7 +48,3 @@ source ~/.zsh/alias.zsh
 source ~/.zsh/func.zsh
 source ~/.zsh/menu.zsh
 source ~/.zsh/keyboard.zsh
-
-if command -v tmux &> /dev/null && [[ -z "$TMUX" ]]; then
-    tmux attach || tmux new
-fi
