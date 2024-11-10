@@ -2,7 +2,6 @@
 title = "Console"
 decorations = "Full"
 dynamic_title = true
-opacity = 0.91 
 
 [terminal]
 shell = { program = "/bin/zsh", args = ["-l", "-c", "tmux attach-session -t jsd 2>/dev/null || tmux new-session -s jsd"] }
