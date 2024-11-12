@@ -29,14 +29,9 @@ zplug load
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
-# Referencing p10k.zsh
-if [ -f "~/.zsh/p10k-default.zsh" ]; then
-	echo ".p10k-default.zsh file not found. Create default file by running 'p10k configure' and then move it to ~/.zsh/p10k-default.zshrc."
-else
-	ZLE_RPROMPT_INDENT=0
-	source ~/.config/zshell/p10k-default.zsh
-	source ~/.config/zshell/p10k.zsh
-fi
+ZLE_RPROMPT_INDENT=0
+source ~/.config/zshell/p10k-default.zsh
+source ~/.config/zshell/p10k.zsh
 
 # Referencing files from ~/.zsh
 source ~/.config/zshell/alias.zsh
