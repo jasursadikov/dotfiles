@@ -33,13 +33,3 @@ blue       = '#1e78e4'
 magenta    = '#9841bb'
 cyan       = '#0ab9dc'
 white      = '#ffffff'
-
-[colors.bright]
-black      = '#5e5c64'
-red        = '#c01c28'
-green      = '#2ec27e'
-yellow     = '#f5c211'
-blue       = '#1e78e4'
-magenta    = '#9841bb'
-cyan       = '#0ab9dc'
-white      = '#ffffff'
