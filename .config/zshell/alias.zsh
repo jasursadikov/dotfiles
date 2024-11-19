@@ -12,7 +12,7 @@ alias ..='cd ..'
 alias ~='cd ~'
 
 alias cls=clear
-alias ff=fastfetch
+alias ff="fastfetch"
 alias r=ranger
 
 alias edit=micro
