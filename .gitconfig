@@ -25,7 +25,7 @@
 	c = "commit -m"
 	clr = "!git fetch --prune && git branch | grep 'release/|\\feature/\\|bugfix/' | xargs -n 1 git branch -D"
 	d = "pull"
-	discard = "!git reset --hard HEAD && git clean -df"
+	discard = "!git reset --hard HEAD && git clean -df && git checkout -- ."
 	f = "fetch"
 	p = "push"
 	P = "push -f"
