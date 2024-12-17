@@ -93,6 +93,6 @@
 	"workbench.preferredLightColorTheme": "Default Light Modern",
 	"python.defaultInterpreterPath": "/home/jsd/Documents/personal/mud-ygrt/.venv",
 	"[xml]": {
-		"editor.defaultFormatter": "DotJoshJohnson.xml"
+		"editor.defaultFormatter": "redhat.vscode-xml"
 	}
 }

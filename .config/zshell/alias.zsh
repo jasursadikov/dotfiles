@@ -1,4 +1,3 @@
-alias cd='z'
 alias diff='diff --color'
 alias ls='exa -a --group-directories-first --icons=always --color=auto --no-quotes --classify=auto'
 alias lf='exa -f -a --icons=always --color=auto --no-quotes --classify=auto'
