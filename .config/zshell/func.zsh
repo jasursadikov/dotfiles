@@ -1,36 +1,48 @@
 # Dot files repo management
-dotfiles-enable() {
-	cd ~
-	mv .git~ .git 
-	cd - > /dev/null
-	git status
+dotfiles() {
+    if [ "$#" -ne 1 ]; then
+        echo "Error: This function requires exactly 1 argument."
+        echo "Usage: dotfiles {enable|disable|update}"
+        return 1
+    fi
+
+    case "$1" in
+        enable)
+            cd ~ 
+            mv .git~ .git
+            cd - > /dev/null
+            git status
+            ;;
+        disable)
+            cd ~
+            mv .git .git~
+            cd - > /dev/null
+            ;;
+        update)
+            cd ~
+            if [ -d ".git~" ]; then
+                mv .git~ .git
+            fi
+
+            if ! git status | grep -q "nothing to commit"; then
+                git status
+                git add .
+                git commit -m "$(emoji-clock) $(date +'%H:%M 📆 %Y-%m-%d')"
+                git push
+            else
+                echo "Nothing to update"
+            fi
+
+            mv .git .git~
+            cd - > /dev/null
+            ;;
+        *)
+            echo "Invalid argument: $1"
+            echo "Usage: dotfiles {enable|disable|update}"
+            return 1
+            ;;
+    esac
 }
-
-dotfiles-disable() {
-	cd ~
-	mv .git .git~
-	cd - > /dev/null
-}
-
-dotfiles-update() {
-	cd ~
-	if [ -d ".git~" ]; then
-		mv .git~ .git
-	fi
-
-	if ! git status | grep -q "nothing to commit"; then
-		git status
-		git add .
-		git commit -m "$(emoji-clock) $(date +'%H:%M 📆 %Y-%m-%d')"
-		git push
-	else
-		echo "Nothing to update"
-	fi
-	
-	mv .git .git~
-	cd - > /dev/null
-}
-
 
 # Tools
 logout() {
