@@ -1,6 +1,6 @@
 command = "tmux"
 
-theme = "Adwaita Dark"
+theme = "Hardcore"
 title = "Ghostty Console" 
 
 font-family = "Cascadia Code"
@@ -11,3 +11,5 @@ cursor-style = "block"
 cursor-style-blink = true
 
 window-theme = ghostty
+
+confirm-close-surface = false
