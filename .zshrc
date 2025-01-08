@@ -30,11 +30,11 @@ source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
 ZLE_RPROMPT_INDENT=0
-source ~/.config/zshell/p10k-default.zsh
-source ~/.config/zshell/p10k.zsh
+source ~/.config/zsh/p10k-default.zsh
+source ~/.config/zsh/p10k.zsh
 
 # Referencing files from ~/.zsh
-source ~/.config/zshell/alias.zsh
-source ~/.config/zshell/func.zsh
-source ~/.config/zshell/menu.zsh
-source ~/.config/zshell/keyboard.zsh
+source ~/.config/zsh/alias.zsh
+source ~/.config/zsh/func.zsh
+source ~/.config/zsh/menu.zsh
+source ~/.config/zsh/keyboard.zsh
