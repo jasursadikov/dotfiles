@@ -8,12 +8,12 @@ setopt globdots
 source ~/.zplug/init.zsh
 
 # Referencing plugins
-zplug "plugins/archlinux",			from:oh-my-zsh
+zplug "plugins/archlinux",		from:oh-my-zsh
 zplug "plugins/colored-man-pages",	from:oh-my-zsh
 zplug "plugins/command-not-found",	from:oh-my-zsh
 zplug "plugins/emoji-clock",		from:oh-my-zsh
-zplug "plugins/history",			from:oh-my-zsh
-zplug "plugins/sudo",				from:oh-my-zsh
+zplug "plugins/history",		from:oh-my-zsh
+zplug "plugins/sudo",			from:oh-my-zsh
 
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-autosuggestions"

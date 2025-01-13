@@ -1,11 +1,10 @@
-command = "tmux"
 
-theme = "Hardcore"
-title = "Ghostty Console" 
+theme = "Adwaita Dark"
+title = "Console" 
 
 font-family = "Cascadia Code"
 font-family = "Apple Color Emoji"
-font-size = 11
+font-size = 10
 
 cursor-style = "block"
 cursor-style-blink = true
