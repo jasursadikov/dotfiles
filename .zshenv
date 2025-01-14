@@ -1,13 +1,16 @@
 export FZF_BASE=/usr/share/fzf
 export FZF_DEFAULT_COMMAND="fd"
 
+# Android
+export ANDROID_SDK_PATH="$HOME/.local/share/Android/Sdk"
+export PATH="$PATH:$ANDROID_SDK_PATH/platform-tools"
+export PATH="$PATH:$ANDROID_SDK_PATH/cmdline-tools/latest/bin"
+export PATH="$PATH:$ANDROID_SDK_PATH/emulator"
+
 export ZSH_COMPDUMP="${HOME}/.cache/zsh/.zcompdump"
 
 # Python
 export PYTHONHISTORY="$HOME/.cache/python/history"
-
-# Android
-export ANDROID_SDK_PATH="$HOME/.local/shared/Android/Sdk"
 
 # History configurations
 export HISTFILE="$HOME/.cache/zsh/history"

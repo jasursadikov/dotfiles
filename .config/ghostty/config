@@ -1,6 +1,6 @@
+# command = "tmux"
 
 theme = "Adwaita Dark"
-title = "Console" 
 
 font-family = "Cascadia Code"
 font-family = "Apple Color Emoji"
