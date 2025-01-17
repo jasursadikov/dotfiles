@@ -23,7 +23,7 @@
 	am = "commit --amend -m"
 	b = "checkout -b"
 	c = "commit -m"
-	clr = "!git fetch --prune && git branch | grep -E '^(release|feature|bugfix)/' | xargs -n 1 git branch -D"
+	clr = "!git fetch --prune && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
 	d = "pull"
 	discard = "!git reset --hard HEAD && git clean -df && git checkout -- ."
 	f = "fetch"
