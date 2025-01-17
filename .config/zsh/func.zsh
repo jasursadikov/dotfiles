@@ -18,6 +18,13 @@ dotfiles() {
             mv .git .git~
             cd - > /dev/null
             ;;
+        status)
+            cd ~ 
+            mv .git~ .git
+            git status
+            mv .git .git~
+            cd - > /dev/null
+            ;;
         update)
             cd ~
             if [ -d ".git~" ]; then
@@ -27,7 +34,7 @@ dotfiles() {
             if ! git status | grep -q "nothing to commit"; then
                 git status
                 git add .
-                git commit -m "$(emoji-clock) $(date +'%H:%M 📆 %Y-%m-%d')"
+                git commit -m "$(emoji-clock) $(date +'%H:%M 📆 %d-%m-%Y')"
                 git push
             else
                 echo "Nothing to update"
@@ -53,7 +60,7 @@ logout() {
 # Utilities
 wip() {
 	git add .
-	git commit -m "wip $(emoji-clock) $(date +'%H:%M 📆 %Y-%m-%d')"
+	git commit -m "wip $(emoji-clock) $(date +'%H:%M 📆 %d-%m-%Y')"
 	git push
 }
 

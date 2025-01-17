@@ -6,9 +6,7 @@ alias cat=bat
 alias py=python
 alias grep=rg
 alias pactree='pactree --color'
-
-alias ..='cd ..'
-alias ~='cd ~'
+alias ip='ip -c'
 
 alias ff=fastfetch
 alias r=ranger
@@ -16,5 +14,3 @@ alias r=ranger
 alias edit=micro
 alias calc='gnome-calculator &'
 alias open=xdg-open
-
-alias xorw='echo "$WAYLAND_DISPLAY $XDG_SESSION_TYPE"'

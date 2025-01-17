@@ -1,6 +1,14 @@
 {
 	"workbench.startupEditor": "newUntitledFile",
+	"workbench.colorTheme": "Default Light Modern",
 	"workbench.editor.enablePreview": true,
+	// Auto Dark Mode extensions
+	"window.autoDetectColorScheme": true,
+	"workbench.preferredDarkColorTheme": "Default Dark Modern",
+	"workbench.preferredLightColorTheme": "Default Light Modern",
+	// Window
+	"window.titleBarStyle": "custom",
+	"window.zoomLevel": 0,
 	// Explorer
 	"explorer.openEditors.visible": 1,
 	"explorer.confirmDelete": false,
@@ -22,15 +30,14 @@
 		"*.meta": true
 	},
 	"files.associations": {
-		"*.prefab": "yaml",
+		"*.asmdef": "json",
 		"*.asset": "yaml",
-		"*.unity": "yaml",
 		"*.meta": "yaml",
+		"*.prefab": "yaml",
+		"*.unity": "yaml",
 		"*.uss": "css",
 		"*.uxml": "xml",
-		"*.asmdef": "json"
 	},
-	"window.zoomLevel": 0,
 	// Breadcrumbs
 	"breadcrumbs.enabled": true,
 	"breadcrumbs.symbolPath": "off",
@@ -67,7 +74,9 @@
 	"telemetry.telemetryLevel": "off",
 	// XML
 	"xmlTools.splitAttributesOnFormat": false,
-	"xmlTools.keepClosingTagOnSameLine": true,
+	"[xml]": {
+		"editor.defaultFormatter": "DotJoshJohnson.xml"
+	},
 	// JSON
 	"json.format.enable": true,
 	// HTML
@@ -76,23 +85,13 @@
 	"html.format.wrapLineLength": 160,
 	// Python
 	"python.experiments.enabled": false,
+	"python.defaultInterpreterPath": "/usr/bin/python/",
 	// Misc
 	"diffEditor.wordWrap": "off",
 	"editor.unicodeHighlight.nonBasicASCII": false,
-	"window.menuBarVisibility": "classic",
-	"window.titleBarStyle": "custom",
 	"editor.minimap.enabled": false,
 	"git.autofetch": true,
-	"security.workspace.trust.banner": "never",
 	"remoteHub.commitDirectlyWarning": "off",
+	"security.workspace.trust.banner": "never",
 	"security.workspace.trust.untrustedFiles": "open",
-	"workbench.colorTheme": "Default Light Modern",
-	// Auto Dark Mode extensions
-	"window.autoDetectColorScheme": true,
-	"workbench.preferredDarkColorTheme" : "Default Dark Modern",
-	"workbench.preferredLightColorTheme": "Default Light Modern",
-	"python.defaultInterpreterPath": "/home/jsd/Documents/personal/mud-ygrt/.venv",
-	"[xml]": {
-		"editor.defaultFormatter": "redhat.vscode-xml"
-	}
 }
