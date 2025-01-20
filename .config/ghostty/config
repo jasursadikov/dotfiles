@@ -1,16 +1,19 @@
+# Theme
 theme = "Adwaita Dark"
+window-theme = ghostty
 
+# Fonts
 font-family = "Cascadia Code"
 font-family = "Apple Color Emoji"
 font-size = 10
 
+# Cursor
 cursor-style = "underline"
 cursor-style-blink = true
 
-window-theme = ghostty
-
 confirm-close-surface = false
 
+# Keybindings
 keybind=ctrl+shift+k=goto_split:top
 keybind=ctrl+shift+j=goto_split:bottom
 keybind=ctrl+shift+h=goto_split:left
