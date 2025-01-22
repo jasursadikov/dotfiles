@@ -1,6 +1,6 @@
 # Theme
 theme = "Adwaita Dark"
-window-theme = ghostty
+window-theme = "ghostty"
 
 # Fonts
 font-family = "Cascadia Code"
@@ -8,7 +8,8 @@ font-family = "Apple Color Emoji"
 font-size = 10
 
 # Cursor
-cursor-style = "underline"
+cursor-style = block
+cursor-invert-fg-bg = true
 cursor-style-blink = true
 
 confirm-close-surface = false
@@ -22,4 +23,7 @@ keybind=ctrl+shift+a=goto_split:previous
 keybind=ctrl+shift+d=goto_split:next
 
 keybind=ctrl+shift+s=new_split:right
-keybind=ctrl+shift+q=new_split:down
+keybind=ctrl+shift+x=new_split:down
+
+# Other
+window-save-state = always
