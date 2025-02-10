@@ -1,4 +1,3 @@
-# Dot files repo management
 dotfiles() {
     if [ "$#" -ne 1 ]; then
         echo "Error: This function requires exactly 1 argument."
@@ -51,13 +50,10 @@ dotfiles() {
     esac
 }
 
-# Tools
 logout() {
 	gnome-session-quit --logout --no-prompt	
 }
 
-
-# Utilities
 wip() {
 	git add .
 	git commit -m "wip $(emoji-clock) $(date +'%H:%M 📆 %d-%m-%Y')"

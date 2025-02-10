@@ -3,7 +3,7 @@ run_async = True
 run_table = True
 nerd_fonts = True
 show_borders = True
-collapse_paths = False
+collapse_paths = True
 config_path = /home/jsd/Documents/work/repos/.mudconfig
 
 [alias]
