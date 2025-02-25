@@ -12,7 +12,7 @@ cursor-style = block
 cursor-invert-fg-bg = true
 cursor-style-blink = true
 
-confirm-close-surface = false
+confirm-close-surface = true
 
 # Keybindings
 keybind=ctrl+shift+k=goto_split:top
@@ -25,5 +25,4 @@ keybind=ctrl+shift+d=goto_split:next
 keybind=ctrl+shift+s=new_split:right
 keybind=ctrl+shift+x=new_split:down
 
-# Other
-window-save-state = always
+keybind=ctrl+shift+w=close_surface
