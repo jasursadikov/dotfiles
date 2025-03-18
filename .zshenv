@@ -7,7 +7,10 @@ export PATH="$PATH:$ANDROID_SDK_PATH/platform-tools"
 export PATH="$PATH:$ANDROID_SDK_PATH/cmdline-tools/latest/bin"
 export PATH="$PATH:$ANDROID_SDK_PATH/emulator"
 
-export ZSH_COMPDUMP="${HOME}/.cache/zsh/.zcompdump"
+# .NET
+export PATH="$PATH:$HOME/.dotnet/tools"
+
+export ZSH_COMPDUMP="$HOME/.cache/zsh/.zcompdump"
 
 # Python
 export PYTHONHISTORY="$HOME/.cache/python/history"
