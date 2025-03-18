@@ -1,10 +1,16 @@
 [user]
 	name = Jasur Sadikov
 	email = jasur@sadikoff.com
-[includeIf "gitdir:~/Documents/work/"]
-	path = ~/.gitconfig-work
 [credential]
 	helper = store
+[core]
+	editor = code --wait
+[init]
+	defaultBranch = master
+[fetch]
+	prune = true
+[includeIf "gitdir:~/Documents/work/"]
+	path = ~/.gitconfig-work
 [diff]
 	tool = rider
 [difftool]
@@ -18,6 +24,11 @@
 [mergetool "rider"]
 	cmd = "rider" merge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
     trustExitCode = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 [alias]
 	a = "add ."
 	am = "commit --amend -m"
@@ -33,12 +44,3 @@
 	st = "status"
 	to = "checkout"
 	u = "push -u origin HEAD"
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-[core]
-	editor = code --wait
-[init]
-	defaultBranch = master
