@@ -2,6 +2,8 @@ alias cat=bat
 alias grep=rg
 alias ls='exa -a --group-directories-first --icons=always --color=auto --no-quotes --classify=auto --hyperlink'
 
+alias 1='ls -1'
+
 alias diff='diff --color'
 alias edit=micro
 alias ip='ip -c'
