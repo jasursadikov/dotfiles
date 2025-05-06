@@ -29,3 +29,6 @@ export PYTHONHISTORY="$HOME/.cache/python/history"
 
 # NPM
 export PATH="$PATH:$HOME/.cache/npm/bin"
+
+# Trackman
+export TRACKMAN_STREAMINGASSETS="/mnt/data/courses"

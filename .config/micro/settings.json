@@ -1,1 +1,20 @@
-{}
+{
+  "*.jsonc": {
+    "filetype": "json"
+  },
+  "*.prefab": {
+  	"filetype": "yaml"
+  },
+  "*.asset": {
+  	"filetype": "yaml"
+  },
+  "*.asmdef": {
+  	"json"
+  },
+  ".mudconfig": {
+  	"filetype": "tsv"
+  },
+  ".mudsettings"{
+  	"filetype": "ini"
+  }
+}
