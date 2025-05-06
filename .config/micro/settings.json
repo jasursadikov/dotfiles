@@ -2,6 +2,12 @@
   "*.jsonc": {
     "filetype": "json"
   },
+  ".mudconfig": {
+    "filetype": "tsv"
+  },
+  ".mudsettings": {
+    "filetype": "ini"
+  },
   "*.prefab": {
   	"filetype": "yaml"
   },
@@ -9,12 +15,15 @@
   	"filetype": "yaml"
   },
   "*.asmdef": {
-  	"json"
+    "filetype": "yaml"
   },
-  ".mudconfig": {
-  	"filetype": "tsv"
+  "*.unity": {
+    "filetype": "yaml"
   },
-  ".mudsettings"{
-  	"filetype": "ini"
+  "*.uss": {
+    "filetype": "css"
+  },
+  "*.uxml": {
+    "filetype": "xml"
   }
 }
