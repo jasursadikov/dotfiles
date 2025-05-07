@@ -1,29 +1,9 @@
 {
-  "*.jsonc": {
-    "filetype": "json"
-  },
-  ".mudconfig": {
-    "filetype": "tsv"
-  },
-  ".mudsettings": {
-    "filetype": "ini"
-  },
-  "*.prefab": {
-  	"filetype": "yaml"
-  },
-  "*.asset": {
-  	"filetype": "yaml"
-  },
-  "*.asmdef": {
-    "filetype": "yaml"
-  },
-  "*.unity": {
-    "filetype": "yaml"
-  },
-  "*.uss": {
-    "filetype": "css"
-  },
-  "*.uxml": {
-    "filetype": "xml"
-  }
+  "*.jsonc": { "filetype": "json" },
+  "*.prefab": { "filetype": "yaml" },
+  "*.asset": { "filetype": "yaml" },
+  "*.asmdef": { "filetype": "yaml" },
+  "*.unity": { "filetype": "yaml" },
+  "*.uss": { "filetype": "css" },
+  "*.uxml": { "filetype": "xml" }
 }

@@ -30,18 +30,14 @@
 	process = git-lfs filter-process
 	required = true
 [alias]
-	a = "add ."
 	am = "commit --amend -m"
 	b = "checkout -b"
-	c = "commit -m"
 	clr = "!git -c color.ui=never fetch --prune && git -c color.ui=never branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
-	d = "pull"
 	discard = "!git reset --hard HEAD && git clean -df && git checkout -- ."
 	f = "fetch"
 	l = "log --oneline"
-	p = "push"
-	P = "push -f"
 	pull = "git fetch && git merge origin --ff-only"
 	st = "status"
 	to = "checkout"
 	u = "push -u origin HEAD"
+	upload = "git add .; git commit -m 'Initial commit'; git push -u origin HEAD"
