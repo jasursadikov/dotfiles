@@ -45,3 +45,6 @@ source ~/.config/zsh/menu.zsh
 source ~/.config/zsh/keyboard.zsh
 source ~/.config/zsh/p10k-default.zsh
 source ~/.config/zsh/p10k.zsh
+
+# Broot
+source ~/.config/broot/launcher/bash/br
