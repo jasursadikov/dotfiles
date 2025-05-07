@@ -45,15 +45,3 @@ source ~/.config/zsh/menu.zsh
 source ~/.config/zsh/keyboard.zsh
 source ~/.config/zsh/p10k-default.zsh
 source ~/.config/zsh/p10k.zsh
-
-
-fzf_tree_cd_widget() {
-  local dir
-  dir=$(find . -type d -not -path '*/.*' \
-    | sed 's|^\./||' \
-    | fzf +m --preview 'ls -la {}') || return
-  LBUFFER+="$dir"
-  zle reset-prompt
-}
-zle -N fzf_tree_cd_widget
-bindkey '^G' fzf_tree_cd_widget
