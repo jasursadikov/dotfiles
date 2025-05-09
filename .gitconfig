@@ -35,7 +35,7 @@
 	clr = "!git -c color.ui=never fetch --prune && git -c color.ui=never branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
 	discard = "!git reset --hard HEAD && git clean -df && git checkout -- ."
 	f = "fetch"
-	l = "log --oneline"
+	l = "!. ~/.local/bin/git-log.sh && pretty_git_log"
 	pull = "git fetch && git merge origin --ff-only"
 	st = "status"
 	to = "checkout"

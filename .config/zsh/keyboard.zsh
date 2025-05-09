@@ -40,3 +40,6 @@ bindkey "${key[CtrlRight]}" forward-word
 bindkey "${key[CtrlLeft]}" backward-word
 bindkey "${key[ShiftCtrlLeft]}" select-word-back
 bindkey "${key[ShiftCtrlRight]}" select-word-forward
+
+# Broot
+bindkey '^b' .zle_insert-path-broot  # ctrl+/

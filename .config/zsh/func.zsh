@@ -65,3 +65,14 @@ newpass() {
 	tr -dc "A-Za-z0-9@#$%^&*()-_+=" </dev/urandom | head -c $PASS_LENGTH | xclip -selection clipboard	
 	echo "New password 🔑 is created and placed in your clipboard 📋"
 }
+
+# Broot file inspector
+.zle_insert-path-broot () {
+  echoti rmkx
+  local locations=(${(f)"$(
+    <$TTY broot --color yes --conf "${HOME}/.config/broot/select.hjson;${HOME}/.config/broot/conf.hjson"
+  )"})
+  locations=(${(q-)locations})
+  LBUFFER+="$locations "
+}
+zle -N       .zle_insert-path-broot

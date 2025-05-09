@@ -4,7 +4,8 @@ run_table = True
 nerd_fonts = True
 show_borders = True
 collapse_paths = True
-config_path = /home/jsd/Documents/work/repos/.mudconfig
+display_absolute_paths = False
+config_path = /home/jsd/Documents/personal/.mudconfig
 
 [alias]
 discard = git discard
@@ -15,3 +16,4 @@ push = git push
 d = git pull
 p = git push
 f = git fetch
+
