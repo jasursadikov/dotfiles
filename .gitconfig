@@ -10,7 +10,7 @@
 [fetch]
 	prune = true
 [includeIf "gitdir:~/Documents/work/"]
-	path = ~/work.gitconfig
+	path = ~/.config/git/work.gitconfig
 [diff]
 	tool = rider
 [difftool]

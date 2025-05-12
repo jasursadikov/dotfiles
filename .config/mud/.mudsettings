@@ -5,7 +5,7 @@ nerd_fonts = True
 show_borders = True
 collapse_paths = True
 display_absolute_paths = False
-config_path = /home/jsd/Documents/personal/.mudconfig
+config_path = /home/jsd/Documents/work/repos/.mudconfig
 
 [alias]
 discard = git discard
