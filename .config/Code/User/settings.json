@@ -46,6 +46,7 @@
 	"editor.wordWrap": "on",
 	"editor.unicodeHighlight.nonBasicASCII": false,
 	"editor.minimap.enabled": false,
+	"editor.maxTokenizationLineLength": 2000000,
 	"security.workspace.trust.banner": "never",
 	"security.workspace.trust.untrustedFiles": "open",
 
