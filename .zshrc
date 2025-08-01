@@ -6,13 +6,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Sourcing .profile, since it is not being sourced by default
-[ -f ~/.profile ] && source ~/.profile
+[ -f $HOME/.profile ] && source $HOME/.profile
 
 # Allows to see the hidden files
 setopt globdots
 
 # Sourcing zplug
-source ~/.zplug/init.zsh
+source $HOME/.zplug/init.zsh
 
 # Referencing plugins
 zplug "plugins/archlinux",	from:oh-my-zsh
@@ -39,12 +39,12 @@ source /usr/share/fzf/key-bindings.zsh
 ZLE_RPROMPT_INDENT=0
 
 # Referencing files from ~/.zsh
-source ~/.config/zsh/alias.zsh
-source ~/.config/zsh/func.zsh
-source ~/.config/zsh/menu.zsh
-source ~/.config/zsh/keyboard.zsh
-source ~/.config/zsh/p10k-default.zsh
-source ~/.config/zsh/p10k.zsh
+source $HOME/.config/zsh/alias.zsh
+source $HOME/.config/zsh/func.zsh
+source $HOME/.config/zsh/menu.zsh
+source $HOME/.config/zsh/keyboard.zsh
+source $HOME/.config/zsh/p10k-default.zsh
+source $HOME/.config/zsh/p10k.zsh
 
 # Broot
-source ~/.config/broot/launcher/bash/br
+source $HOME/.config/broot/launcher/bash/br

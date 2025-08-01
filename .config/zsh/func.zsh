@@ -67,13 +67,21 @@ newpass() {
 }
 
 unity() {
-    local path="$HOME/.cache/Unity/$UNITY_VERSION/Editor/Unity"
+    local unity="$HOME/.cache/Unity/$UNITY_VERSION/Editor/Unity"
+    local project="$(realpath "$1")"
 
-    if [[ -e "$path" ]]; then
-        "$path" "$1" > /dev/null & disown
-    else
-        echo "❌ Unity $UNITY_VERSION does not exist."
+    if [[ ! -x "$project" ]]; then
+        echo "❌ Invalid path"
+        return
     fi
+
+    if [[ ! -x "$unity" ]]; then
+        echo "❌ Unity $UNITY_VERSION does not exist or is not executable."
+        return
+    fi
+
+    echo "📂 Opening $project"
+    exec "$unity" -nohub -projectPath "$project" > /dev/null & disown
 }
 
 # Broot file inspector
