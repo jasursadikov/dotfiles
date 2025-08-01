@@ -66,6 +66,10 @@ newpass() {
 	echo "New password 🔑 is created and placed in your clipboard 📋"
 }
 
+unity() {
+    exec ~/.cache/Unity/($UNITY_VERSION)/Editor/Unity $1 > /dev/null & disown
+}
+
 # Broot file inspector
 .zle_insert-path-broot () {
   echoti rmkx

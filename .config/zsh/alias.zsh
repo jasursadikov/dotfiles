@@ -11,5 +11,3 @@ alias 1="ls -1"
 alias py=python
 alias edit=micro
 alias open=xdg-open
-
-alias unity="~/.cache/Unity/($UNITY_VERSION)/Editor"
