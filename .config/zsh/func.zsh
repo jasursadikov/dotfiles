@@ -67,7 +67,13 @@ newpass() {
 }
 
 unity() {
-    exec ~/.cache/Unity/($UNITY_VERSION)/Editor/Unity $1 > /dev/null & disown
+    local path="$HOME/.cache/Unity/$UNITY_VERSION/Editor/Unity"
+
+    if [[ -e "$path" ]]; then
+        "$path" "$1" > /dev/null & disown
+    else
+        echo "❌ Unity $UNITY_VERSION does not exist."
+    fi
 }
 
 # Broot file inspector
@@ -79,4 +85,5 @@ unity() {
   locations=(${(q-)locations})
   LBUFFER+="$locations "
 }
-zle -N       .zle_insert-path-broot
+
+zle -N .zle_insert-path-broot

@@ -8,6 +8,6 @@ alias tree="exa --group-directories-first --icons=auto --color=auto --no-quotes 
 
 alias 1="ls -1"
 
-alias py=python
-alias edit=micro
-alias open=xdg-open
+alias edit=$EDITOR
+alias py="python"
+alias open="xdg-open"
