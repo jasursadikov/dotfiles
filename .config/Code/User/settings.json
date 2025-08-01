@@ -69,7 +69,7 @@
 	"terminal.integrated.fontFamily": "'Cascadia Code', 'CaskaydiaCove Nerd Font', 'Roboto Mono', 'Consolas'",
 	"terminal.integrated.fontSize": 14,
 	"terminal.integrated.fontWeight": 400,
-	"terminal.integrated.cursorStyle": "underline",
+	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.sendKeybindingsToShell": true,
 	"telemetry.telemetryLevel": "off",
@@ -88,7 +88,7 @@
 	"html.format.wrapLineLength": 160,
 
 	"python.experiments.enabled": false,
-	"python.defaultInterpreterPath": "/usr/bin/python/",
+	"python.defaultInterpreterPath": "/home/jsd/Documents/work/repos/rs-send-renderbufferasync-interactive/.venv/bin/python3.13",
 
 	// Misc
 	"remoteHub.commitDirectlyWarning": "off",
