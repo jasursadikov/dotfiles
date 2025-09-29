@@ -46,7 +46,7 @@
 	"editor.wordWrap": "on",
 	"editor.unicodeHighlight.nonBasicASCII": false,
 	"editor.minimap.enabled": false,
-	"editor.maxTokenizationLineLength": 2000000,
+	"editor.maxTokenizationLineLength": 1000000000000000000000000000000000000000,
 	"security.workspace.trust.banner": "never",
 	"security.workspace.trust.untrustedFiles": "open",
 
@@ -77,18 +77,9 @@
 	"git.autofetch": true,
 	"diffEditor.wordWrap": "off",
 
-	"xmlTools.splitAttributesOnFormat": false,
-
-	"json.format.enable": true,
-	"json.format.keepLines": true,
-	"json.validate.enable": true,
-
 	"html.autoClosingTags": true,
 	"html.format.enable": true,
 	"html.format.wrapLineLength": 160,
-
-	"python.experiments.enabled": false,
-	"python.defaultInterpreterPath": "/home/jsd/Documents/work/repos/rs-send-renderbufferasync-interactive/.venv/bin/python3.13",
 
 	// Misc
 	"remoteHub.commitDirectlyWarning": "off",

@@ -1,5 +1,5 @@
 # Theme
-theme = "Adwaita Dark"
+theme = dark:Adwaita Dark,light: Adwaita
 window-theme = "ghostty"
 
 # Fonts
