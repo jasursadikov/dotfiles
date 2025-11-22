@@ -26,3 +26,6 @@ keybind=ctrl+shift+s=new_split:right
 keybind=ctrl+shift+x=new_split:down
 
 keybind=ctrl+shift+w=close_surface
+
+# Configuration
+clipboard-paste-protection = false
