@@ -66,24 +66,6 @@ newpass() {
 	echo "New password 🔑 is created and placed in your clipboard 📋"
 }
 
-unity() {
-    local unity="$HOME/.cache/Unity/$UNITY_VERSION/Editor/Unity"
-    local project="$(realpath "$1")"
-
-    if [[ ! -x "$project" ]]; then
-        echo "❌ Invalid path"
-        return
-    fi
-
-    if [[ ! -x "$unity" ]]; then
-        echo "❌ Unity $UNITY_VERSION does not exist or is not executable."
-        return
-    fi
-
-    echo "📂 Opening $project"
-    exec "$unity" -nohub -projectPath "$project" > /dev/null & disown
-}
-
 # Broot file inspector
 .zle_insert-path-broot () {
   echoti rmkx

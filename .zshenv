@@ -30,7 +30,5 @@ export PYTHONHISTORY="$HOME/.cache/python/history"
 # NPM
 export PATH="$PATH:$HOME/.cache/npm/bin"
 
-export UNITY_VERSION="2022.3.40f1"
-
 # Work
 source ~/.config/zsh/work.zsh
